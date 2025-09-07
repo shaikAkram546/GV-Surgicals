@@ -43,7 +43,7 @@ export const Footer = () => {
                 { Icon: Linkedin, link: "#" },
                 {
                   Icon: Instagram,
-                  link: "https://www.instagram.com/share/p/BAOvb-3Wfg",
+                  link: "https://www.instagram.com/gvsurgical_hyderabad?utm_source=qr&igsh=MTFuZzk3NTFtZDg0cg==",
                 },
                 { Icon: Youtube, link: "https://www.youtube.com/@gvsurgical" },
               ].map(({ Icon, link }, index) => (

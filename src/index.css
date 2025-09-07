@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GV Surgical & Services Design System - Medical Dark Theme */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 210 100% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 200 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 210 100% 56%;
+    --radius: 0.75rem;
+
+    /* Medical theme colors */
+    --medical-blue: 210 100% 56%;
+    --medical-blue-dark: 210 100% 45%;
+    --medical-teal: 180 100% 42%;
+    --medical-navy: 220 39% 11%;
+    --success-green: 142 76% 36%;
+    --warning-amber: 38 92% 50%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 56%), hsl(200 100% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 39% 11%) 0%, hsl(210 100% 20%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 39% 8%), hsl(220 39% 12%));
+    
+    /* Shadows */
+    --shadow-medical: 0 10px 30px -5px hsl(210 100% 56% / 0.3);
+    --shadow-glow: 0 0 50px hsl(210 100% 56% / 0.2);
+    --shadow-card: 0 4px 20px hsl(220 39% 11% / 0.1);
+
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .dark {
+    --background: 220 39% 6%;
+    --foreground: 0 0% 98%;
+    --card: 220 39% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 39% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 210 100% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 39% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 39% 12%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 200 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 39% 15%;
+    --input: 220 39% 15%;
+    --ring: 210 100% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+  scroll-behavior: smooth;
+}
+}
